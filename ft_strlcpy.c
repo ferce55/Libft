@@ -6,9 +6,11 @@
 /*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/01 19:07:35 by rsarri-c          #+#    #+#             */
-/*   Updated: 2021/08/01 20:13:38 by rsarri-c         ###   ########.fr       */
+/*   Updated: 2021/08/06 19:50:26 by rsarri-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

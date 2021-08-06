@@ -6,11 +6,13 @@
 /*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/01 20:20:54 by rsarri-c          #+#    #+#             */
-/*   Updated: 2021/08/02 18:26:25 by rsarri-c         ###   ########.fr       */
+/*   Updated: 2021/08/06 20:48:26 by rsarri-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{

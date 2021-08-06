@@ -6,9 +6,11 @@
 /*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 19:11:02 by rsarri-c          #+#    #+#             */
-/*   Updated: 2021/08/02 19:21:29 by rsarri-c         ###   ########.fr       */
+/*   Updated: 2021/08/06 19:51:20 by rsarri-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
