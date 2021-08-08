@@ -6,13 +6,13 @@
 /*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/08 11:07:52 by rsarri-c          #+#    #+#             */
-/*   Updated: 2021/08/08 11:12:57 by rsarri-c         ###   ########.fr       */
+/*   Updated: 2021/08/08 12:36:19 by rsarri-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
 

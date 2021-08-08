@@ -6,7 +6,7 @@
 /*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 18:18:46 by rsarri-c          #+#    #+#             */
-/*   Updated: 2021/08/06 19:51:30 by rsarri-c         ###   ########.fr       */
+/*   Updated: 2021/08/08 20:24:21 by rsarri-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	revs = (s + i);
 	while (*s != *revs && c != *revs)
 		revs--;
-	if (c == *revs)
-		return ((char *)s);
+	if ((unsigned char)c == (unsigned char) *revs)
+		return ((char *)revs);
 	return (0);
 }
