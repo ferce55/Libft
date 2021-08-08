@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rsarri-c <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/08 11:10:10 by rsarri-c          #+#    #+#             */
+/*   Updated: 2021/08/08 11:19:48 by rsarri-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	count_words(const char *str, char c)
@@ -21,10 +33,10 @@ static int	count_words(const char *str, char c)
 	return (i);
 }
 
-static char *word_dup(const char *str, int start, int finish)
+static char	*word_dup(const char *str, int start, int finish)
 {
 	char	*word;
-	int	i;
+	int		i;
 
 	i = 0;
 	word = malloc((finish - start) * sizeof(char));
@@ -34,14 +46,15 @@ static char *word_dup(const char *str, int start, int finish)
 	return (word);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
-	int	index;
+	int		index;
 	char	**split;
 
-	if (!s || !(split = malloc((count_words(s, c) + 1) * sizeof(char *))))
+	split = malloc((count_words(s, c) + 1) * sizeof(char));
+	if (!s || !(split))
 		return (0);
 	i = 0;
 	j = 0;
