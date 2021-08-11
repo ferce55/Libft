@@ -16,6 +16,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+typedef struct s_list
+{
+	void	*context;
+	struct s_list	*next;
+}		t_list;
 // general
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
