@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	ft_size(int n)
+static size_t	ft_size(int n)
 {
 	size_t	size;
 
@@ -28,7 +28,7 @@ size_t	ft_size(int n)
 	return (size);
 }
 
-unsigned int	ft_checkn(int n)
+static unsigned int	ft_checkn(int n)
 {
 	unsigned int	nbr;
 
